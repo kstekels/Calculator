@@ -15,6 +15,8 @@
 		15A0A9B52980095B00D52B4A /* SunAndMoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0A9B42980095B00D52B4A /* SunAndMoonView.swift */; };
 		15A0A9B729800A6500D52B4A /* ComputationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0A9B629800A6500D52B4A /* ComputationView.swift */; };
 		15A0A9B929800EB700D52B4A /* CalculatorButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0A9B829800EB700D52B4A /* CalculatorButtonsView.swift */; };
+		15A0A9BB2980184100D52B4A /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0A9BA2980184100D52B4A /* Enumerations.swift */; };
+		15A0A9BF29801DDF00D52B4A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0A9BE29801DDF00D52B4A /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		15A0A9B42980095B00D52B4A /* SunAndMoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunAndMoonView.swift; sourceTree = "<group>"; };
 		15A0A9B629800A6500D52B4A /* ComputationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationView.swift; sourceTree = "<group>"; };
 		15A0A9B829800EB700D52B4A /* CalculatorButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtonsView.swift; sourceTree = "<group>"; };
+		15A0A9BA2980184100D52B4A /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
+		15A0A9BE29801DDF00D52B4A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		15A0A9B2298008BE00D52B4A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				15A0A9BA2980184100D52B4A /* Enumerations.swift */,
 				15A0A9B02980041200D52B4A /* ImageConstants.swift */,
 			);
 			path = Utils;
@@ -90,6 +95,7 @@
 				15A0A9A4297FFF9300D52B4A /* MainCalculatorView.swift */,
 				15A0A9B829800EB700D52B4A /* CalculatorButtonsView.swift */,
 				15A0A9B42980095B00D52B4A /* SunAndMoonView.swift */,
+				15A0A9BE29801DDF00D52B4A /* ButtonView.swift */,
 				15A0A9B629800A6500D52B4A /* ComputationView.swift */,
 			);
 			path = Views;
@@ -165,7 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15A0A9BB2980184100D52B4A /* Enumerations.swift in Sources */,
 				15A0A9B929800EB700D52B4A /* CalculatorButtonsView.swift in Sources */,
+				15A0A9BF29801DDF00D52B4A /* ButtonView.swift in Sources */,
 				15A0A9B52980095B00D52B4A /* SunAndMoonView.swift in Sources */,
 				15A0A9A5297FFF9300D52B4A /* MainCalculatorView.swift in Sources */,
 				15A0A9B729800A6500D52B4A /* ComputationView.swift in Sources */,

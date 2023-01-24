@@ -12,12 +12,28 @@ struct SunAndMoonView: View {
     var lightMode: Bool
     
     var body: some View {
-        Text("Sun Moon View")
+        HStack(spacing: 30) {
+            
+            Image(systemName: !lightMode ? Symbols.sun.rawValue : Symbols.sunFilled.rawValue)
+                .imageScale(.large)
+                .foregroundColor(lightMode ? sunOrMoonSelected : sunOrMoonNotSelected)
+            
+            Image(systemName: lightMode ? Symbols.moon.rawValue : Symbols.moonFilled.rawValue)
+                .imageScale(.large)
+                .foregroundColor(lightMode ? sunOrMoonNotSelected : sunOrMoonSelected)
+        }
+        .padding()
+        .background(SecondaryBackground)
+        .cornerRadius(20)
     }
 }
 
 struct SunAndMoonView_Previews: PreviewProvider {
     static var previews: some View {
-        SunAndMoonView(lightMode: true)
+        VStack {
+            SunAndMoonView(lightMode: true)
+            SunAndMoonView(lightMode: false)
+        }
+        
     }
 }

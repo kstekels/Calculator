@@ -30,3 +30,11 @@ let PrimaryBg = Color(Colors.PrimaryBg.rawValue)
 let SecondaryBackground = Color(Colors.SecondaryBackground.rawValue)
 let sunOrMoonNotSelected = Color(Colors.sunOrMoonNotSelected.rawValue)
 let sunOrMoonSelected = Color(Colors.sunOrMoonSelected.rawValue)
+
+
+enum Symbols: String {
+    case sun = "sun.max"
+    case sunFilled = "sun.max.fill"
+    case moon = "moon"
+    case moonFilled = "moon.fill"
+}
