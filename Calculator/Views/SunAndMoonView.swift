@@ -15,16 +15,19 @@ struct SunAndMoonView: View {
         HStack(spacing: 30) {
             
             Image(systemName: !lightMode ? Symbols.sun.rawValue : Symbols.sunFilled.rawValue)
-                .imageScale(.large)
                 .foregroundColor(lightMode ? sunOrMoonSelected : sunOrMoonNotSelected)
             
+            
             Image(systemName: lightMode ? Symbols.moon.rawValue : Symbols.moonFilled.rawValue)
-                .imageScale(.large)
                 .foregroundColor(lightMode ? sunOrMoonNotSelected : sunOrMoonSelected)
+                
         }
+        .imageScale(.large)
+        .font(UIDevice.isIPad ? .title : .body)
+        .fontWeight(UIDevice.isIPad ? .semibold : .regular)
         .padding()
         .background(SecondaryBackground)
-        .cornerRadius(20)
+        .cornerRadius(UIDevice.isIPad ? 50 : 20)
     }
 }
 

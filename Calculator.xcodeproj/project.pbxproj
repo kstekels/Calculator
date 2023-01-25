@@ -17,6 +17,8 @@
 		15A0A9B929800EB700D52B4A /* CalculatorButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0A9B829800EB700D52B4A /* CalculatorButtonsView.swift */; };
 		15A0A9BB2980184100D52B4A /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0A9BA2980184100D52B4A /* Enumerations.swift */; };
 		15A0A9BF29801DDF00D52B4A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0A9BE29801DDF00D52B4A /* ButtonView.swift */; };
+		15A0A9C12980FD8E00D52B4A /* String Helper Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0A9C02980FD8E00D52B4A /* String Helper Functions.swift */; };
+		15A0A9C42981127600D52B4A /* iPad Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0A9C32981127600D52B4A /* iPad Support.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		15A0A9B829800EB700D52B4A /* CalculatorButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtonsView.swift; sourceTree = "<group>"; };
 		15A0A9BA2980184100D52B4A /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
 		15A0A9BE29801DDF00D52B4A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		15A0A9C02980FD8E00D52B4A /* String Helper Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String Helper Functions.swift"; sourceTree = "<group>"; };
+		15A0A9C32981127600D52B4A /* iPad Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iPad Support.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 		15A0A9A1297FFF9300D52B4A /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				15A0A9C22981125E00D52B4A /* Extensions */,
 				15A0A9A2297FFF9300D52B4A /* CalculatorApp.swift */,
 				15A0A9B3298008C600D52B4A /* Views */,
 				15A0A9B2298008BE00D52B4A /* Utils */,
@@ -84,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				15A0A9BA2980184100D52B4A /* Enumerations.swift */,
+				15A0A9C02980FD8E00D52B4A /* String Helper Functions.swift */,
 				15A0A9B02980041200D52B4A /* ImageConstants.swift */,
 			);
 			path = Utils;
@@ -99,6 +105,14 @@
 				15A0A9B629800A6500D52B4A /* ComputationView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		15A0A9C22981125E00D52B4A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15A0A9C32981127600D52B4A /* iPad Support.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,12 +186,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				15A0A9BB2980184100D52B4A /* Enumerations.swift in Sources */,
+				15A0A9C12980FD8E00D52B4A /* String Helper Functions.swift in Sources */,
 				15A0A9B929800EB700D52B4A /* CalculatorButtonsView.swift in Sources */,
 				15A0A9BF29801DDF00D52B4A /* ButtonView.swift in Sources */,
 				15A0A9B52980095B00D52B4A /* SunAndMoonView.swift in Sources */,
 				15A0A9A5297FFF9300D52B4A /* MainCalculatorView.swift in Sources */,
 				15A0A9B729800A6500D52B4A /* ComputationView.swift in Sources */,
 				15A0A9B12980041200D52B4A /* ImageConstants.swift in Sources */,
+				15A0A9C42981127600D52B4A /* iPad Support.swift in Sources */,
 				15A0A9A3297FFF9300D52B4A /* CalculatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,8 +329,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,8 +357,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
